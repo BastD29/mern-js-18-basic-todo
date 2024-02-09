@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 24px;
+}
+
+.todo-form {
+  margin-bottom: 24px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+  width: 300px;
+}
+
+.todo-item {
+  border: solid 1px black;
+  padding: 16px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
