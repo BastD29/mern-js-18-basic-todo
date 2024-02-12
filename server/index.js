@@ -8,7 +8,7 @@ connectDB();
 
 const corsOptions = {
   origin: "https://basic-todo-o6zm.onrender.com",
-  methods: "GET",
+  methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: "Content-Type,Authorization",
 };
 
