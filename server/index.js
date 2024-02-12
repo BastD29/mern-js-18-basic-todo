@@ -6,11 +6,17 @@ const cors = require("cors");
 
 connectDB();
 
+const corsOptions = {
+  //   origin: "https://internationalization-afiu.onrender.com",
+  methods: "GET",
+  allowedHeaders: "Content-Type,Authorization",
+};
+
 const port = process.env.PORT || 5050;
 
 const app = express();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
